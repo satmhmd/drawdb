@@ -1,0 +1,124 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 z" fill="#94A3B8" />
+    </marker>
+  </defs>
+
+  <!-- Users cluster -->
+  <rect x="40" y="40" rx="14" ry="14" width="370" height="220" fill="#fff" stroke="#E5E7EB" filter="url(#soft)" />
+  <text x="60" y="72" font-size="18" font-weight="700">المستخدمون وواجهة العميل</text>
+
+  <g>
+    <rect x="60" y="92" rx="10" width="140" height="48" fill="#FAFAFA" stroke="#E6EEF7" />
+    <text x="75" y="122" font-size="12">تسجيل الدخول / Auth</text>
+
+    <rect x="210" y="92" rx="10" width="200" height="48" fill="#FAFAFA" stroke="#E6EEF7" />
+    <text x="230" y="122" font-size="12">الملف الشخصي (Profile)</text>
+
+    <rect x="60" y="152" rx="10" width="350" height="48" fill="#FEFEFE" stroke="#E6EEF7" />
+    <text x="75" y="182" font-size="12">تطبيقات: ويب - أندرويد - iOS - API للجهات الخارجية</text>
+  </g>
+
+  <!-- Social Graph / Relationships -->
+  <rect x="440" y="40" rx="14" ry="14" width="360" height="220" fill="#fff" stroke="#E5E7EB" filter="url(#soft)" />
+  <text x="460" y="72" font-size="18" font-weight="700">العلاقات الاجتماعية &amp; التفاعل</text>
+
+  <g>
+    <rect x="460" y="92" rx="10" width="160" height="40" fill="#FBFBFF" stroke="#DDE9FF" />
+    <text x="480" y="118" font-size="12">الأصدقاء / المتابعون (Graph DB)</text>
+
+    <rect x="630" y="92" rx="10" width="180" height="40" fill="#FBFBFF" stroke="#DDE9FF" />
+    <text x="650" y="118" font-size="12">القنوات / الصفحات / المجموعات (Ownership)</text>
+
+    <rect x="460" y="142" rx="10" width="350" height="40" fill="#FEFEFF" stroke="#DDE9FF" />
+    <text x="480" y="168" font-size="12">الأنشطة: منشورات، تعليقات، تفاعلات (Like, Share, Save)</text>
+  </g>
+
+  <!-- Feed & Recommendation -->
+  <rect x="40" y="290" rx="14" ry="14" width="360" height="240" fill="#fff" stroke="#E5E7EB" filter="url(#soft)" />
+  <text x="60" y="320" font-size="18" font-weight="700">خدمة الخلاصات (Feed) و التوصية</text>
+
+  <g>
+    <rect x="60" y="350" rx="10" width="160" height="40" fill="#FFF8F0" stroke="#F3E7D6" />
+    <text x="80" y="374" font-size="12">Feed Generator (قواعد توقيتية + محركات ترشيح)</text>
+
+    <rect x="230" y="350" rx="10" width="170" height="40" fill="#FFF8F0" stroke="#F3E7D6" />
+    <text x="252" y="374" font-size="12">Recommendation Engine (ML — Graph + Content + Behavior)</text>
+
+    <rect x="60" y="402" rx="10" width="340" height="48" fill="#FFFDFE" stroke="#F3E7D6" />
+    <text x="80" y="430" font-size="12">Personalization &amp; Signals: interests, history, social signals, recency</text>
+  </g>
+
+  <!-- Backend Services -->
+  <rect x="440" y="290" rx="14" ry="14" width="360" height="240" fill="#fff" stroke="#E5E7EB" filter="url(#soft)" />
+  <text x="460" y="320" font-size="18" font-weight="700">خدمات الباك-إند &amp; البنية التحتية</text>
+
+  <g>
+    <rect x="460" y="350" rx="10" width="160" height="40" fill="#F7FFF7" stroke="#DFF7E6" />
+    <text x="480" y="374" font-size="12">API Gateway &amp; Auth Service</text>
+
+    <rect x="630" y="350" rx="10" width="160" height="40" fill="#F7FFF7" stroke="#DFF7E6" />
+    <text x="650" y="374" font-size="12">Realtime (WebSocket / RTC) &amp; Message Broker</text>
+
+    <rect x="460" y="402" rx="10" width="330" height="40" fill="#F7FFF7" stroke="#DFF7E6" />
+    <text x="480" y="428" font-size="12">Workers / Background Jobs (Notifications, Media processing)</text>
+  </g>
+
+  <!-- Storage and DBs -->
+  <rect x="840" y="40" rx="14" ry="14" width="280" height="240" fill="#fff" stroke="#E5E7EB" filter="url(#soft)" />
+  <text x="860" y="72" font-size="18" font-weight="700">قاعدة البيانات و التخزين</text>
+
+  <g>
+    <rect x="860" y="100" rx="8" width="240" height="40" fill="#FFF" stroke="#E6EEF7" />
+    <text x="880" y="126" font-size="12">User DB (SQL — profiles, auth)</text>
+
+    <rect x="860" y="148" rx="8" width="240" height="40" fill="#FFF" stroke="#E6EEF7" />
+    <text x="880" y="174" font-size="12">Graph DB (Neo4j / Janus — علاقات اجتماعية)</text>
+
+    <rect x="860" y="196" rx="8" width="240" height="40" fill="#FFF" stroke="#E6EEF7" />
+    <text x="880" y="222" font-size="12">Feed DB / Cache (Redis, Materialized Views)</text>
+
+    <rect x="860" y="244" rx="8" width="240" height="40" fill="#FFF" stroke="#E6EEF7" />
+    <text x="880" y="270" font-size="12">Media Storage (Object Storage + CDN)</text>
+  </g>
+
+  <!-- Analytics & Moderation -->
+  <rect x="840" y="310" rx="14" ry="14" width="280" height="160" fill="#fff" stroke="#E5E7EB" filter="url(#soft)" />
+  <text x="860" y="338" font-size="16" font-weight="700">تحليلات / مراقبة / أمن</text>
+
+  <g>
+    <rect x="860" y="364" rx="8" width="240" height="36" fill="#FFF" stroke="#E6EEF7" />
+    <text x="880" y="388" font-size="12">Analytics DB / Event Store (Clickstream)</text>
+
+    <rect x="860" y="406" rx="8" width="240" height="36" fill="#FFF" stroke="#E6EEF7" />
+    <text x="880" y="430" font-size="12">Moderation &amp; Safety (ML + Human-in-loop)</text>
+  </g>
+
+  <!-- Arrows (simplified) -->
+
+  <!-- Users -> API Gateway -->
+  <line x1="240" y1="250" x2="520" y2="300" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="300" y="270" font-size="11">طلبات API / WebSocket</text>
+
+  <!-- Backend -> DBs -->
+  <line x1="660" y1="420" x2="860" y2="340" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="740" y="380" font-size="11">قراءة/كتابة</text>
+
+  <!-- Feed -> User -->
+  <line x1="220" y1="450" x2="320" y2="320" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="240" y="400" font-size="11">خلاصات مخصصة</text>
+
+  <!-- Graph -> Recommendation -->
+  <line x1="740" y1="120" x2="410" y2="370" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="560" y="210" font-size="11">إشارات اجتماعية للسيرفر التوصية</text>
+
+  <!-- Moderation -> Feed -->
+  <line x1="980" y1="420" x2="380" y2="420" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow)" />
+  <text x="700" y="440" font-size="11">قواعد المحتوى/فلترة</text>
+
+</svg>
